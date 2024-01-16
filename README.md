@@ -1,19 +1,16 @@
 # Face Authentication System
 
-This is a modern Face Authentication System which includes state-of-art algorithms to detect face and generate face embedding. This system contains endpoints which can be integrated to any device depending on the requirements. 
+This is a modern Face Authentication System which includes state-of-art algorithms to detect face and generate face embedding. This system contains endpoints which can be integrated to any device depending on the requirements. The only difference between this project and Facial-Authenticator is the API. Facial-Authenticator has cooler API than this one.
 
-## Project Architecture
-<img width="773" alt="image" src="https://user-images.githubusercontent.com/57321948/210045920-cc545886-1053-44f2-a491-e2ce8a3d18ce.png">
-
-<img width="716" alt="image" src="https://user-images.githubusercontent.com/57321948/209801055-d2b2b882-b6a3-45ec-80e4-d794b021200b.png">
-
+## Project Archietecture
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/57321948/195135349-9888d9ea-af5d-4ee2-8aa4-1e57342add05.png">
 
 ## Run the Application
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need Azure account to access the service like ACS and App services.
 
 ### Step 1-: Clone the Repository
 ```
-git clone https://github.com/Rishav-hub/face_auth_dev.git
+git clone https://github.com/midofemi/Facial_Authentication2.git
 ```
 
 ### Step 2-: Creat conda environment
@@ -23,7 +20,7 @@ conda create -p ./env python=3.8.13 -y
 
 ### Step 3-: Activate Conda environment
 ```
-conda activate face_auth
+conda activate env
 ```
 
 ### Step 4-: Install requirements
@@ -31,7 +28,7 @@ conda activate face_auth
 pip install -r requirements.txt
 ```
 
-### Step 5-: Export the environment variable
+### Step 5-: Export the environment variable or create a .env where you can store these configuration (in my case)
 ```
 export SECRET_KEY=<SECRET_KEY>
 
@@ -69,5 +66,3 @@ docker run -d -p 8000:8000 <IMAGEID OR IMAGENAME>
 - Azure container Registry (ACR) for Docker image of project is stored
 - Azure App Services for deploying the application
 - GitHub Actions for CI/CD
-
-#### Please refer this [documentation](https://github.com/Rishav-hub/face_auth_dev/blob/main/docs/setup.md) for deployment to Azure.
