@@ -1,7 +1,7 @@
 #!bin/bash
 
-az group create -n <your_app_name>tfstate -l eastus2
+az group create -n 56faceauthtfstate -l eastus2
  
-az storage account create -n <your_app_name>tfstate -g <your_app_name>tfstate -l eastus2 --sku "Standard_LRS"
+az storage account create -n 56faceauthtfstate -g 56faceauthtfstate -l eastus2 --sku "Standard_LRS"
  
-az storage container create -n tfstate --account-name <your_app_name>tfstate
+az storage container create -n tfstate --account-name 56faceauthtfstate --auth-mode login

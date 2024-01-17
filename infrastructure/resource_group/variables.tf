@@ -5,5 +5,5 @@ variable "faceapp_resource_group_name" {
 
 variable "faceapp_resource_group_location" {
   type    = string
-  default = "eastus"
+  default = "eastus2"
 }
